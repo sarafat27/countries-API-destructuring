@@ -34,11 +34,12 @@ const displayCountries = countries => {
 // }
 
 //option 2 of destructuring of object in parameter
-const getCountryHTML = ({ name, flags, area }) => {
+const getCountryHTML = ({ name, flags, area, region }) => {
     return `
        <div class="country">
         <h2>${name.common}</h2>
         <p>Area: ${area}</p>
+        <p>Continent: ${region}</p>
         <img src="${flags.png}">
        </div>
 
